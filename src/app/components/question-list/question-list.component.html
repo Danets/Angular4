@@ -1,0 +1,6 @@
+<app-add-question (questionAdded)="onAddQuestion($event)"></app-add-question>
+<app-question
+ [question]="question"
+ *ngFor="let question of questions; let i = index"
+ (questionRemoved)="onRemoveQuestion($event)">
+ </app-question>
